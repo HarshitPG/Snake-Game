@@ -105,7 +105,7 @@ border: solid 2px #0066cc;
 }
 @media (max-width:750px){
     h1{
-        font-size:150%;
+        font-size:35px;
     }
     .btn{
         font-size: 14px;
