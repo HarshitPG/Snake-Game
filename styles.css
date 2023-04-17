@@ -110,4 +110,22 @@ border: solid 2px #0066cc;
     .btn{
         font-size: 14px;
     }
+        .controls i {
+        padding:10px 0 ;
+        width:calc(100% / 4);
+        text-align: center;
+        color: #a8dadc;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-right: 1px solid #457B9D;
+    }
+    .gameheader{
+        width: 100vmin;
+        height: 100vmin;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color:#1d3557 ;
+        border-radius: 6px;
+    }
 }
