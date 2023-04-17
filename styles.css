@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    font-size:300%;
+}
+.title{
+    padding: 3%;
+    color: #1D3557;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.mainbody{
+    padding-top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#f1faee;
+}
+.gameheader{
+    width: 65vmin;
+    height: 65vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color:#1d3557 ;
+    border-radius: 6px;
+}
+.gamedetails{
+    color:#a8dadc ;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 2.5% 2.5%;
+    display: flex;
+    justify-content: space-between;   
+}
+.gamebody{
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30,1fr)/repeat(30,1fr);
+    background: #457B9D;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;  
+}
+.controls i {
+    padding:25px 0 ;
+    width:calc(100% / 4);
+    text-align: center;
+    color: #a8dadc;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-right: 1px solid #457B9D;
+}
+.gamebody .food{
+    background: #E63946;
+}
+.gamebody .snake{
+    background:#A8DADC ;
+}
+.contact{
+    text-decoration: none;
+    padding:7% 4% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+
+font-family: 'Montserrat',sans-serif;
+font-weight: 0;
+font-size: 18px;
+color: #fff;
+background: linear-gradient(90deg, #457b9d 72%, #f1faee 100%);
+padding: 10px 30px;
+border: solid #1d3557 2px;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+border-radius: 20px;
+transition : 996ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-decoration: none;
+}
+
+.btn:hover{
+
+transition : 996ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #457b9d 14%, #f1faee 100%);
+color: #1d3557;
+border: solid 2px #0066cc;
+}
+@media (max-width:750px){
+    h1{
+        font-size:150%;
+    }
+    .btn{
+        font-size: 14px;
+    }
+}
